@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="calculadora-text">CALCULADORA</h1>
+        <div class="container-calculadora">
+            <p id="resultado"></p>
+
+            <div id="container-buttons">
+
+                <table id="tabela-buttons-1" class="tabela">
+                    <button value="limpa-tela" id="limpa-tela-button" class="button" onclick="limpar()">C</button>
+                    <button value="remove-item" id="remove-item-button" class="button" onclick="voltar()"><</button>
+                    <button value="divisão" id="divisao-button" class="button" onclick="inserirNumero('/')">/</button>
+                    <button value="multiplicação" id="multiplicacao-button" class="button" onclick="inserirNumero('*')">x</button>
+                </table>
+                
+                <table id="tabela-buttons-2" class="tabela">
+                    <button value="7" id="button-7" class="button" onclick="inserirNumero('7')">7</button>
+                    <button value="8" id="button-8" class="button" onclick="inserirNumero('8')">8</button>
+                    <button value="9" id="button-9" class="button" onclick="inserirNumero('9')">9</button>
+                    <button value="subtração" id="subtracao-button" class="button" onclick="inserirNumero('-')">-</button>
+                </table>
+
+                <table id="tabela-buttons-3" class="tabela">
+                    <button value="4" id="button-4" class="button" onclick="inserirNumero('4')">4</button>
+                    <button value="5" id="button-5" class="button" onclick="inserirNumero('5')">5</button>
+                    <button value="6" id="button-6" class="button" onclick="inserirNumero('6')">6</button>
+                    <button value="soma" id="soma-button" class="button" onclick="inserirNumero('+')">+</button>
+                </table>
+
+                <div id="tabela-buttons-4" class="tabela">
+                    <button value="3" id="button-3" class="button" onclick="inserirNumero('3')">3</button>
+                    <button value="2" id="button-2" class="button" onclick="inserirNumero('2')">2</button>
+                    <button value="1" id="button-1" class="button" onclick="inserirNumero('1')">1</button>
+                </div>
+
+                <div id="container-button-resultado">
+                    <button value="resultado" id="resultado-button" class="button" onclick="calcular()">=</button>
+                </div>
+
+                <div id="tabela-buttons-5" class="tabela">
+                    <button value="0" id="button-0" class="button" onclick="inserirNumero('0')">0</button>
+                    <button value="." id="button-ponto" class="button" onclick="inserirNumero('.')">.</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
