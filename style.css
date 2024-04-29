@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: radial-gradient( circle 547px at 50% 50%,  rgb(56, 129, 174) 0%, rgba(29,77,113,1) 98.6% );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-calculadora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: black;
+    width: fit-content;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    border-bottom: 10px solid black ;
+}
+
+.button{
+    padding: 25px;
+    font-size: 20px;
+    margin: 5px;
+    height: 90px;    
+}
+
+#container-buttons{
+    border: 1px solid black;
+    width: fit-content;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.tabela{
+    display: flex;
+    flex-direction: column;
+}
+
+#tabela-buttons-5{  
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-top: -90px;
+    margin-left: 50px;
+}
+
+#tabela-buttons-4{  
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: left;
+    margin-left: 9px;
+}
+
+#resultado{
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: 35px;
+    width: 280px;
+    height: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+    justify-content: right;
+    text-align: center;
+    align-items: center;
+    border: 5px solid black;
+    margin-top: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#calculadora-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-top: -100px;
+}
+
+#button-0{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#button-ponto{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding: 28px;
+}
+
+#container-button-resultado{
+    display: flex;
+    width: fit-content;
+    justify-content: left;
+    flex-direction: column;
+    padding-left: 221px;
+    margin-right: 5px;
+    top: 100px;
+}
+
+#resultado-button{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(144, 219, 32);
+    border: none;
+    margin-top: -95px;
+    height: 180px;
+    padding: 25px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+#resultado-button:hover{
+    background-color: rgb(120, 183, 25);
+}
+
+.button{
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+.button:hover{
+    color: white;
+    background-color: rgba(108, 108, 108, 0.908);
+}
+
+#limpa-tela-button{
+    background-color: crimson;
+    padding: 24px;
+    transition: 0.5s;
+}
+
+#limpa-tela-button:hover{
+    background-color: rgb(183, 17, 50);
+}
+
+#subtracao-button{
+    padding: 28px;
+    color: orangered;
+}
+
+#multiplicacao-button{
+    padding: 27px;
+    color: orangered;
+}
+
+#divisao-button{
+    padding: 28px;
+    color: orangered;
+}
+
+#soma-button{
+    color: orangered;
+}
+
+#remove-item-button{
+    color: orangered;
+}
+
+@media (max-width: 1375px) {
+    .button{
+        padding: 22px;
+        font-size: 18px;
+        margin: 5px;
+        height: 70px;  
+    }
+    #resultado-button{
+        margin-top: -65px;
+        height: 150px;
+        padding: 22px;
+        font-size: 28px;
+    }
+    #tabela-buttons-4{  
+        margin-left: 14px;
+        height: 70px;  
+    }
+    #tabela-buttons-5{
+        margin-top: -80px;
+        margin-left: 50px;
+    }
+    #resultado{
+        font-size: 30px;
+        height: 50px;
+        margin-bottom: 4px;
+        margin-top: 4px;
+        width: 265px;
+    }
+    #calculadora-text{
+        margin-top: -25px;
+    }
+    .container-calculadora{
+        margin-top: 30px;
+        border-bottom: 15px solid black ;
+        width: 290px;
+    }
+    #soma-button{
+        padding: 25px;
+    }
+    #subtracao-button{
+        padding: 28px;
+    }
+    #multiplicacao-button{
+        padding: 26px;
+    }
+    #divisao-button{
+        padding: 26px;
+    }
+    #resultado-button{
+        margin-left: -8px;
+    }
+    #container-buttons{
+        width: 290px;
+    }
+}
